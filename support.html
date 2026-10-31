@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Fisherman Go Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Nunito:wght@400;700;800;900&display=swap">
+<style>/* Shared look for the Fisherman Go web pages: deep lake teal into dusk purple, rounded game display face */
+:root{--bg:#f3f8f6;--ink:#10262b;--muted:#4c6a6c;--card:#ffffff;--line:#d3e3df;--accent:#14695e;--accent2:#3b1f6e;--gold:#b98710;
+  --display:'Lilita One','Arial Rounded MT Bold',system-ui,sans-serif;--body:'Nunito',system-ui,-apple-system,'Segoe UI',sans-serif;color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a1f;--ink:#e6f2ef;--muted:#9dbab5;--card:#11272d;--line:#21403f;--accent:#5fd3b8;--accent2:#b79bff;--gold:#ffd24a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0b1a1f;--ink:#e6f2ef;--muted:#9dbab5;--card:#11272d;--line:#21403f;--accent:#5fd3b8;--accent2:#b79bff;--gold:#ffd24a;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16.5px;line-height:1.6}
+.band{background:linear-gradient(120deg,#14695e 0%,#18404f 48%,#2a1550 100%);color:#fff;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:34px 30px}
+.band .in,.main{max-width:720px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:12px;font-family:var(--display);font-size:20px;letter-spacing:.02em}
+.brand svg{width:38px;height:38px;flex:none}
+.band h1{font-family:var(--display);font-weight:400;font-size:clamp(32px,7vw,46px);line-height:1.05;margin:18px 0 6px;text-wrap:balance}
+.band p{margin:0;color:#cfeee6;font-weight:700}
+.main{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:26px 48px;display:flex;flex-direction:column;gap:22px}
+.main h2{font-family:var(--display);font-weight:400;font-size:24px;line-height:1.2;margin:0;color:var(--accent);text-wrap:balance}
+.main p,.main li{margin:0;max-width:65ch}
+.main ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
+section{display:flex;flex-direction:column;gap:8px}
+.summary{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:8px}
+.summary b{color:var(--accent2)}
+.contact{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px}
+.contact code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:15px;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--ink);padding:4px 10px;border-radius:8px;user-select:all;word-break:break-all}
+.contact button{font:inherit;font-weight:800;border:1px solid var(--accent);color:var(--accent);background:transparent;border-radius:999px;padding:5px 14px;cursor:pointer}
+.contact button:focus-visible,a:focus-visible{outline:2px solid var(--accent2);outline-offset:2px}
+a{color:var(--accent)}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 16px}
+details summary{cursor:pointer;font-weight:900}
+details[open] summary{margin-bottom:6px}
+.faq{display:flex;flex-direction:column;gap:10px}
+.meta{color:var(--muted);font-size:14px}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+</style>
+</head>
+<body style="margin:0">
+<header class="band"><div class="in"><div class="brand"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="22" fill="#0f3b45" stroke="#ffe26a" stroke-width="2.5"/><path d="M6 30 L16 18 L22 25 L28 16 L42 30 Z" fill="#cfe7f8"/><path d="M4 31h40v8a20 20 0 0 1-40 0z" fill="#2e7fb0"/><path d="M14 30c6-7 14-9 22-6-3 1-5 3-6 5 2 1 4 1 6 0-1 3-4 5-8 5-6 0-10-2-14-4z" fill="#ff8a3d"/><circle cx="31" cy="27" r="1.4" fill="#10262b"/></svg>Fisherman Go</div><h1>Help &amp; Support</h1><p>Questions about the game or a purchase? We're happy to help.</p></div></header>
+<main class="main">
+<section><h2>Contact us</h2><div class="contact"><span>Email us</span><code>support@velmontdigital.com</code><button type="button" data-copy="support@velmontdigital.com">Copy</button></div><p class="meta">Please include your device model, iOS version and what happened. We usually reply within a few days.</p></section>
+<section><h2>Common questions</h2><div class="faq">
+<details open><summary>I bought pearls but they haven't arrived</summary><p>Pearls are added as soon as Apple confirms the purchase. If the game was closed or lost connection, open it again and the purchase is delivered automatically. Purchases waiting for Ask to Buy approval arrive once they're approved.</p></details>
+<details><summary>Can I get my purchases on a new device?</summary><p>Pearl packs and the Premium Season Pass are used up in your game, so there is no Restore button. Your progress, including what you bought, moves to a new iPhone or iPad when you restore that device from an iCloud or computer backup.</p></details>
+<details><summary>How do I ask for a refund?</summary><p>Apple handles all payments and refunds. Request one at <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>.</p></details>
+<details><summary>How do I catch the mystical giants?</summary><p>Buy <b>Glow Worms</b> in Shop → Bait, choose them with the bait button under Cast, then cast. Each Glow Worm cast lures one of six giants, including the Megalodon and the Kraken.</p></details>
+<details><summary>Is my progress saved?</summary><p>Yes. The game saves automatically on your device after every catch and purchase. No account is needed.</p></details>
+<details><summary>How long does the Premium Season Pass last?</summary><p>Premium lasts for the current monthly season. A new season starts at the beginning of each month, and every reward you claimed stays yours.</p></details>
+<details><summary>There's no sound</summary><p>Check the speaker button at the top right of the game, and make sure your device's silent switch is off. Game sounds follow the silent switch so they never interrupt your own music.</p></details>
+</div></section>
+<section><h2>Requirements</h2><p>iPhone or iPad with iOS 16 or later. The game works offline.</p></section>
+<section><h2>Privacy</h2><p>Fisherman Go collects no personal information. Read the full <a href="privacy.html">privacy policy</a> for details.</p></section>
+<footer>Fisherman Go · Velmont Digital</footer>
+</main><script>
+document.querySelectorAll('[data-copy]').forEach(b=>b.addEventListener('click',()=>{const t=b.dataset.copy;const done=()=>{b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1600);};
+  try{navigator.clipboard.writeText(t).then(done,()=>{const r=document.createRange();r.selectNodeContents(b.previousElementSibling);const s=getSelection();s.removeAllRanges();s.addRange(r);});}catch(e){}}));
+</script>
+</body>
+</html>
